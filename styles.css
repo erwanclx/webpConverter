@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(./fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Fira';
+    src: url(./fonts/FiraSansCondensed-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Athiti';
+    src: url(./fonts/Athiti-Regular.ttf);
+}
+
+:root {
+    --title: 'Nunito', sans-serif;
+    --body: 'Athiti', sans-serif;
+    --accent: 'Fira', sans-serif;
+}
+
+body {
+    font-family: var(--body);
+    background-color: #23262e;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: var(--title);
+    margin: 0;
+    margin-left: 10px;
+    color: #fff;
+}
+
+h1 > span {
+    color: #8b37c3;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.separator {
+    width: 5px;
+    border-radius: 90px;
+    height: 70%;
+    background-color: #3a3d47;
+}
+
+button {
+    background-color: #8b37c3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #a13dd1;
+    transform: scale(1.1);
+}
