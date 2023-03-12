@@ -2,7 +2,6 @@ async function fileConvert() {
   const result = await window.dialog.showDialog()
   console.log(result);
   const pathimg = result.filePaths[0]
-  document.getElementById('test').innerText = `Selected file: ${result.filePaths[0]}`
   return pathimg
 }
 
